@@ -1,0 +1,9 @@
+[package]
+name = "tesla-charge-util"
+desccription = ""
+readme = "./README.md"
+version = "0.1.0"
+edition = "2021"
+authors = [ "bkliebmann@gmail.com" ]
+
+[dependencies]
