@@ -1,7 +1,8 @@
 use leptos_axum::LeptosRoutes;
 use axum::{Router, routing::post};
 use front::Site;
-use tower_http::services::ServeDir;
+use tower::ServiceBuilder;
+use tower_http::{services::ServeDir, compression::CompressionLayer};
 
 #[tokio::main]
 async fn main() {
@@ -12,7 +13,10 @@ async fn main() {
     let addr = opts.site_addr;
 
     let app = Router::new()
-        .fallback_service(ServeDir::new(opts.site_root.clone()))
+        .fallback_service(ServiceBuilder::new()
+            .layer(CompressionLayer::new())
+            .service(ServeDir::new(opts.site_root.clone()))
+        )
         .route("/api/*fn_name", post(leptos_axum::handle_server_fns))
         .leptos_routes(&opts, routes, Site)
         .with_state(opts);
