@@ -13,6 +13,8 @@ http.workspace = true
 cfg-if.workspace = true
 thiserror.workspace = true
 
+tracing = "0.1"
+
 [features]
 default = []
 hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
