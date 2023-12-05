@@ -2,13 +2,19 @@
 module.exports = {
     content: ["./src/front/**/*.rs"],
     theme: {
-        extend: {},
+        extend: {
+            maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+            }
+        },
         colors: {
             'night': {
                 400: '#101012',
                 300: '#121214',
                 200: '#1B1B1C',
-                100: '#242424'
+                100: '#242424',
+                50:  '#303030',
             },
             'mercury': {
                 400: '#837C8E',

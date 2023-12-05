@@ -1,8 +1,11 @@
-use leptos::{component, IntoView, view, create_signal, SignalSet, SignalUpdate, IntoAttribute};
+use leptos::{component, IntoView, view, create_signal, SignalSet, SignalUpdate, IntoAttribute, Show, SignalGet};
 use leptos_meta::{Stylesheet, Title, Body};
 use leptos_router::{Router, Routes, Route};
 
+use crate::front::projects::Projects;
+
 mod icon;
+pub mod projects;
 
 #[component]
 pub fn Site() -> impl IntoView {
@@ -16,6 +19,7 @@ pub fn Site() -> impl IntoView {
             <main>
                 <Routes>
                     <Route path="" view=Homepage />
+                    <Route path="projects" view=Projects />
                 </Routes>
             </main>
         </Router>
@@ -27,7 +31,8 @@ pub fn Homepage() -> impl IntoView {
     view! {
         <Navbar/>
 
-        <div class="max-w-7xl mx-auto pt-5">
+        <div class="max-w-7xl h-screen mx-auto pt-5">
+            <p class="text-3xl font-mono text-sol-100">Welcome</p>
         </div>
     }
 }
@@ -57,14 +62,17 @@ pub fn Navbar() -> impl IntoView {
                     </div>
                     
                     //Right side navbar content
-                    <div class="relative hidden lg:flex items-center ml-auto">
-                        <div class="h-full hover:bg-night-100">
-                            <a class="hover:text-mercury-100 text-mercury-400 font-mono" href="/projects">"Projects"</a>
-                        </div>
+                    <div class="relative lg:flex items-center ml-auto">
                         <a class="ml-10 block" href="https://github.com/bendi11">
                             <span class="sr-only">"Github icon"</span>
                             <svg class="w-9 h-9 fill-mercury-400 hover:fill-mercury-100" viewBox="0 0 16 16">
                                 <path d={icon::GITHUB_PATH} />
+                            </svg>
+                        </a>
+                        <a class="px-5" href="/projects">
+                            <span class="sr-only">Projects Icon</span>
+                            <svg class="w-9 h-9 fill-mercury-400 hover:fill-mercury-100" viewBox="0 0 32 32">
+                                <path d={icon::HAMBURGER_PATH} />
                             </svg>
                         </a>
                     </div>
