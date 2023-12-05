@@ -1,11 +1,14 @@
-use leptos_axum::LeptosRoutes;
-use axum::{Router, routing::post};
-use front::Site;
-use tower::ServiceBuilder;
-use tower_http::{services::ServeDir, compression::CompressionLayer};
+mod front;
 
+#[cfg(feature = "ssr")]
 #[tokio::main]
 async fn main() {
+    use leptos_axum::LeptosRoutes;
+    use axum::{Router, routing::post};
+    use front::Site;
+    use tower::ServiceBuilder;
+    use tower_http::{services::ServeDir, compression::CompressionLayer};
+
     let conf = leptos::get_configuration(None).await.unwrap();
     let routes = leptos_axum::generate_route_list(Site);
     
@@ -26,3 +29,6 @@ async fn main() {
         .await
         .unwrap();
 }
+
+#[cfg(not(feature = "ssr"))]
+fn main() {}

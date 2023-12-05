@@ -2,9 +2,7 @@ use leptos::{component, IntoView, view, create_signal, SignalSet, SignalUpdate, 
 use leptos_meta::{Stylesheet, Title, Body};
 use leptos_router::{Router, Routes, Route};
 
-use evcharge::EvChargeRoutes;
-
-mod evcharge;
+mod icon;
 
 #[component]
 pub fn Site() -> impl IntoView {
@@ -17,7 +15,6 @@ pub fn Site() -> impl IntoView {
         <Router>
             <main>
                 <Routes>
-                    <EvChargeRoutes />
                     <Route path="" view=Homepage />
                 </Routes>
             </main>
@@ -30,12 +27,10 @@ pub fn Homepage() -> impl IntoView {
     view! {
         <Navbar/>
 
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto pt-5">
         </div>
     }
 }
-
-const GITHUB_PATH: &'static str = include_str!("./embed/github.path.txt");
 
 #[component]
 pub fn Navbar() -> impl IntoView {
@@ -69,7 +64,7 @@ pub fn Navbar() -> impl IntoView {
                         <a class="ml-10 block" href="https://github.com/bendi11">
                             <span class="sr-only">"Github icon"</span>
                             <svg class="w-9 h-9 fill-mercury-400 hover:fill-mercury-100" viewBox="0 0 16 16">
-                                <path d={GITHUB_PATH} />
+                                <path d={icon::GITHUB_PATH} />
                             </svg>
                         </a>
                     </div>
