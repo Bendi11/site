@@ -2,7 +2,7 @@
 {{ $orbit := resources.Get "css/orbit.css" }}
 {{ $maincss := slice ($tachyons) ($orbit) | resources.Concat "css/main.css" }}
 
-{{ $maincss_mini := $maincss | minify }}
+{{ $maincss_mini := $maincss }}
 {{ with $maincss_mini }}
     <link rel="stylesheet" href = "{{ .RelPermalink }}" >
 {{ end }}

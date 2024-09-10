@@ -43,5 +43,13 @@
 }
 
 h1 {
-    color: var(--sol-0);
+    color: var(--sol-1);
+}
+
+p {
+    color: var(--mercury-1);
+}
+
+.sep-flare {
+    padding: 0.1rem;
 }

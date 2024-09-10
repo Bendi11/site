@@ -1,6 +1,17 @@
 {{ define "main" }}
-    <h1 class="f1 w-100 tl">{{ .Title }}</h1>
-    <p>
+    <div class="flex w-100 ph4 items-center">
+        <h1 class="f1 tl code">{{ .Title }}</h1>
+        <div style="flex:1"></div>
+        Test
+    </div>
+    <div class="flex w-100">
+        <div class="fl w-20 sep-flare" style="background-color: var(--sol-0)"></div>
+        <div class="fl w-20 sep-flare" style="background-color: var(--mercury-3)"></div>
+        <div class="fl w-20 sep-flare" style="background-color: var(--venus-1)"></div>
+        <div class="fl w-20 sep-flare" style="background-color: var(--earth-3)"></div>
+        <div class="fl w-20 sep-flare" style="background-color: var(--mars-2)"></div>
+    </div>
+    <div class="ph4">
         {{ .Content }}
-    </p>
+    </div>
 {{ end }}
