@@ -1,0 +1,47 @@
+:root {
+    --night-3: #09090B;
+    --night-2: #121214;
+    --night-1: #1b1b1c;
+    --night-0: #242424;
+
+    --mercury-3: #837c8e;
+    --mercury-2: #898492;
+    --mercury-1: #8f8b96;
+    --mercury-0: #9b98a1;
+
+    --mars-3: #7e2a22;
+    --mars-2: #8a382a;
+    --mars-1: #964632;
+    --mars-0: #ad6242;
+
+    --venus-3: #a87748;
+    --venus-2: #b48349;
+    --venus-1: #bf8e4a;
+    --venus-0: #c49656;
+
+    --earth-3: #23577d;
+    --earth-2: #2f71a1;
+    --earth-1: #3689b3;
+    --earth-0: #3793b2;
+
+    --sol-3: #ffe4c7;
+    --sol-2: #ffe8d1;
+    --sol-1: #ffeddb;
+    --sol-0: #fff4ea;
+}
+
+.bg {
+    background-color: var(--night-2);
+}
+
+.bg-dark {
+    background-color: var(--night-3);
+}
+
+.bg-light {
+    background-color: var(--night-0);
+}
+
+h1 {
+    color: var(--sol-0);
+}
