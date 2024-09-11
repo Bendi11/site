@@ -1,8 +1,8 @@
 {{ $tachyons := resources.Get "css/tachyons.css" }}
 {{ $orbit := resources.Get "css/orbit.css" }}
-{{ $maincss := slice ($tachyons) ($orbit) | resources.Concat "css/main.css" }}
+{{ $maincss := slice ($orbit) ($tachyons) | resources.Concat "css/main.css" }}
 
-{{ $maincss_mini := $maincss }}
+{{ $maincss_mini := $maincss | css.PostCSS | minify | fingerprint | resources.PostProcess }}
 {{ with $maincss_mini }}
     <link rel="stylesheet" href = "{{ .RelPermalink }}" >
 {{ end }}

@@ -1,3 +1,8 @@
 baseURL = 'https://bkl-dev.com/'
 languageCode = 'en-us'
 title = 'Development Site'
+
+[build]
+  [build.buildStats]
+    enable = true
+

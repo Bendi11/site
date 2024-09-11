@@ -10,11 +10,11 @@
             {{ end }}
         </title>
     </head>
-    <body class = "bg-light">
-        <article class="flex flex-column flex-wrap justify-between items-start mw8 center bg shadow-3">
+    <body class="bg-bright">
+        <article class="column justify-between items-start center bg" style="max-width:64rem;min-height:100vh;box-shadow: 0 0 4px 2px rgb(0,0,0,0.5);padding-top: 0px;">
             {{ block "main" . }}
             {{ end }}
-            <div class="min-vh-100" />
+            <div style="flex:1"/>
         </article>
     </body>
 </html>

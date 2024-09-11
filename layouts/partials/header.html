@@ -1,0 +1,20 @@
+<div class="w-100 bg-light">
+    <div class="flex w-100 ph4 pv3 items-center">
+        {{ with site.GetPage "/" }}
+            <a class="f2 code dim header-link link" href="{{ .RelPermalink }}">Ben's Place</a>
+        {{ end }}
+
+        <div style="flex:1"></div>
+
+        {{ with site.GetPage "projects" }}
+            <a href="{{ .RelPermalink }}" class="dim link f4 code" style="color: var(--mercury-0)">Projects</a>
+        {{ end }}
+    </div>
+    <div class="flex w-100">
+        <div class="sep-flare" style="background-color: var(--sol-0)"></div>
+        <div class="sep-flare" style="background-color: var(--mercury-3)"></div>
+        <div class="sep-flare" style="background-color: var(--venus-1)"></div>
+        <div class="sep-flare" style="background-color: var(--earth-3)"></div>
+        <div class="sep-flare" style="background-color: var(--mars-2)"></div>
+    </div>
+</div>

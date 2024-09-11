@@ -30,26 +30,33 @@
     --sol-0: #fff4ea;
 }
 
-.bg {
-    background-color: var(--night-2);
-}
+.bg-dark { background-color: var(--night-3); }
+.bg { background-color: var(--night-2); }
+.bg-light { background-color: var(--night-1); }
+.bg-bright { background-color: var(--night-0); }
 
-.bg-dark {
-    background-color: var(--night-3);
-}
-
-.bg-light {
-    background-color: var(--night-0);
-}
-
-h1 {
+.header-link {
     color: var(--sol-1);
 }
 
 p {
+    font-size: 1.25rem;
+    font-family: sans-serif;
     color: var(--mercury-1);
 }
 
+.inlink {
+    color: var(--venus-2);
+    text-decoration: none;
+}
+
+.inlink:hover {
+    color: var(--venus-3);
+    text-shadow: 3px 3px 2px var(--night-3);
+}
+
 .sep-flare {
+    width: 20%;
     padding: 0.1rem;
+    box-shadow: 0px 0.25rem 3px 0px rgba(0, 0, 0, 1.0);
 }

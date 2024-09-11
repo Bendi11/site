@@ -1,0 +1,43 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "article",
+      "body",
+      "div",
+      "h1",
+      "head",
+      "html",
+      "link",
+      "meta",
+      "p",
+      "script",
+      "title"
+    ],
+    "classes": [
+      "bg",
+      "bg-bright",
+      "bg-light",
+      "center",
+      "code",
+      "column",
+      "dim",
+      "f2",
+      "f4",
+      "flex",
+      "header-link",
+      "items-center",
+      "items-start",
+      "justify-between",
+      "link",
+      "ph4",
+      "pv3",
+      "sep-flare",
+      "w-100"
+    ],
+    "ids": [
+      "projects-index",
+      "test-page"
+    ]
+  }
+}
