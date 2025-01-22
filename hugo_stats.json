@@ -1,7 +1,59 @@
 {
   "htmlElements": {
-    "tags": null,
-    "classes": null,
-    "ids": null
+    "tags": [
+      "a",
+      "article",
+      "body",
+      "div",
+      "h1",
+      "h2",
+      "head",
+      "html",
+      "img",
+      "link",
+      "meta",
+      "p",
+      "title"
+    ],
+    "classes": [
+      "bg",
+      "bg-bright",
+      "bg-light",
+      "br--top",
+      "br2",
+      "center",
+      "code",
+      "column",
+      "db",
+      "dim",
+      "f3",
+      "f4",
+      "flex",
+      "flex-column",
+      "flex-row-ns",
+      "flex-wrap",
+      "grow",
+      "header-link",
+      "items-center",
+      "items-start",
+      "justify-between",
+      "justify-center",
+      "link",
+      "mr3",
+      "no-underline",
+      "pb0-ns",
+      "pb3",
+      "ph3",
+      "ph4",
+      "pt5",
+      "pv3",
+      "sep-flare",
+      "shadow-5",
+      "tc",
+      "w-100"
+    ],
+    "ids": [
+      "florence-the-robotic-vacuum-cleaner"
+    ]
   }
 }

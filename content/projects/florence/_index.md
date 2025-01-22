@@ -1,7 +1,7 @@
 +++
 title = 'Florence Robotic Vacuum Cleaner'
 date = 2024-09-10T13:02:02-07:00
-draft = true
+draft = false
 type = 'project'
 kind = 'page'
 +++
