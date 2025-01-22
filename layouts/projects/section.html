@@ -1,0 +1,17 @@
+{{ define "main" }}
+    {{ partial "header.html" }}
+    {{ $pages := where site.Pages "Type" "project" }}
+    {{ $paginator := .Paginate $pages }}
+    <div class="pt5 ph4 flex flex-wrap justify-center">
+        {{ range $paginator.Pages }}
+            <a href="{{.RelPermalink}}" class="no-underline mr3 bg-light br2 grow shadow-5" style="width:20rem;height:20rem;">
+                {{ with .Resources.Get "img/header.jpg" }}
+                    <img src="{{ .RelPermalink }}" class="db w-100 br2 br--top" style="object-fit:cover;height:38%" />
+                {{ end }}
+                <div class="ph3">
+                    <h2 class="tc code header-link">{{ .Title }}</h3>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}

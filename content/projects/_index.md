@@ -1,10 +1,8 @@
 +++
 title = 'Projects'
-date = 2024-09-10T15:40:52-07:00
+date = 2024-09-15T12:35:28-07:00
 draft = true
-type = 'section'
 +++
 
 # Projects Index
-
-Test
+Testing

@@ -1,60 +1,7 @@
 {
   "htmlElements": {
-    "tags": [
-      "a",
-      "article",
-      "body",
-      "div",
-      "h1",
-      "head",
-      "html",
-      "link",
-      "meta",
-      "p",
-      "script",
-      "title"
-    ],
-    "classes": [
-      "bg",
-      "bg-bright",
-      "bg-light",
-      "center",
-      "code",
-      "column",
-      "dim",
-      "f2-ns",
-      "f3",
-      "f3-m",
-      "f4",
-      "flex",
-      "flex-column",
-      "flex-column-l",
-      "flex-column-m",
-      "flex-column-ns",
-      "flex-columnph4",
-      "flex-row",
-      "flex-row-l",
-      "flex-row-ns",
-      "header-link",
-      "items-center",
-      "items-start",
-      "justify-between",
-      "link",
-      "pb0-ns",
-      "pb2",
-      "pb3",
-      "pb4",
-      "ph4",
-      "pv0-ns",
-      "pv3",
-      "pv4",
-      "pv4-ns",
-      "sep-flare",
-      "w-100"
-    ],
-    "ids": [
-      "projects-index",
-      "test-page"
-    ]
+    "tags": null,
+    "classes": null,
+    "ids": null
   }
 }

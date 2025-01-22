@@ -45,6 +45,11 @@ p {
     color: var(--mercury-1);
 }
 
+h1 {
+    font-family: sans-serif;
+    color: var(--sol-0);
+}
+
 .inlink {
     color: var(--venus-2);
     text-decoration: none;
