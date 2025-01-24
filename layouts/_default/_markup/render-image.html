@@ -1,0 +1,4 @@
+<img src="{{ .Destination | safeURL }}" loading="lazy"
+  {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>
