@@ -1,0 +1,5 @@
+{{ define "main" }}
+    {{ partial "header.html" }}
+    {{ $pages := where site.Pages "Type" "blog" }}
+    {{ $paginator := .Paginate $pages }}
+{{ end }}

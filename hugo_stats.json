@@ -7,11 +7,14 @@
       "div",
       "h1",
       "h2",
+      "h3",
       "head",
       "html",
       "img",
       "link",
       "meta",
+      "p",
+      "script",
       "title"
     ],
     "classes": [
@@ -26,33 +29,38 @@
       "db",
       "dim",
       "f3",
-      "f4",
       "flex",
-      "flex-column",
-      "flex-row-ns",
       "flex-wrap",
       "grow",
+      "header-box",
       "header-link",
-      "items-center",
       "items-start",
       "justify-between",
       "justify-center",
       "link",
+      "mb3",
       "mr3",
       "no-underline",
       "pb0-ns",
+      "pb1",
       "pb3",
       "ph3",
       "ph4",
+      "pl3",
+      "pt3",
       "pt5",
-      "pv3",
       "sep-flare",
       "shadow-5",
       "tc",
-      "w-100"
+      "w-100",
+      "w-75"
     ],
     "ids": [
-      "florence-the-robotic-vacuum-cleaner"
+      "contact-me",
+      "electronics-design",
+      "modular-rocket-archer",
+      "skills",
+      "software-development"
     ]
   }
 }

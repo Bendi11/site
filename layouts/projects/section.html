@@ -5,11 +5,12 @@
     <div class="pt5 ph4 flex flex-wrap justify-center">
         {{ range $paginator.Pages }}
             <a href="{{.RelPermalink}}" class="no-underline mr3 bg-light br2 grow shadow-5" style="width:20rem;height:20rem;">
-                {{ with .Resources.Get "img/header.jpg" }}
+                {{ with .Resources.Get "img/header.png" }}
                     <img src="{{ .RelPermalink }}" class="db w-100 br2 br--top" style="object-fit:cover;height:38%" loading="lazy"/>
                 {{ end }}
                 <div class="ph3">
                     <h2 class="tc code header-link">{{ .Title }}</h3>
+                    <p>{{ .Description }}</p>
                 </div>
             </a>
         {{ end }}

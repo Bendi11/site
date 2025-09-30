@@ -37,6 +37,11 @@
 
 .header-link {
     color: var(--sol-1);
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 p {
@@ -47,7 +52,22 @@ p {
 
 h1 {
     font-family: sans-serif;
+    text-align: center;
     color: var(--sol-0);
+}
+
+h2 {
+    font-family: sans-serif;
+    color: var(--sol-2);
+}
+
+h3 {
+    font-family: sans-serif;
+    color: var(--mercury-2);
+}
+
+a {
+    color: var(--earth-2);
 }
 
 .inlink {
@@ -60,8 +80,19 @@ h1 {
     text-shadow: 3px 3px 2px var(--night-3);
 }
 
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 4rem;
+}
+
 .sep-flare {
-    width: 20%;
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
+    width: 100%;
     padding: 0.1rem;
     box-shadow: 0px 0.25rem 3px 0px rgba(0, 0, 0, 1.0);
 }

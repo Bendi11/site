@@ -6,3 +6,8 @@ title = 'Development Site'
   [build.buildStats]
     enable = true
 
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+

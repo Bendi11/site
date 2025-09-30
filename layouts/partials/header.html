@@ -1,20 +1,41 @@
 <div class="bg-light">
-    <div class="flex flex-row-ns flex-column ph4 pv3 items-center ">
+    <!--<div class="flex flex-row-ns flex-column ph4 pv3 items-center ">
         {{ with site.GetPage "/" }}
-            <a class="pb3 pb0-ns f3 code dim header-link link" href="{{ .RelPermalink }}">Ben's Place</a>
+            <a class="w-25 pb3 pb0-ns f3 code dim header-link link" href="{{ .RelPermalink }}">Ben's Place</a>
         {{ end }}
 
         <div style="flex:1"></div>
 
-        {{ with site.GetPage "projects" }}
-            <a href="{{ .RelPermalink }}" class="dim link f4 code" style="color: var(--mercury-0)">Projects</a>
+        
+
+        {{ with site.GetPage "blog" }}
+            <a href="{{ .RelPermalink }}" class="pl5 dim link f4 code" style="color: var(--mercury-0)">Blog</a>
         {{ end }}
-    </div>
+    </div -->
     <div class="flex w-100">
-        <div class="sep-flare" style="background-color: var(--sol-0)"></div>
-        <div class="sep-flare" style="background-color: var(--mercury-3)"></div>
-        <div class="sep-flare" style="background-color: var(--venus-1)"></div>
-        <div class="sep-flare" style="background-color: var(--earth-3)"></div>
-        <div class="sep-flare" style="background-color: var(--mars-2)"></div>
+        <div class="header-box ">
+            {{ with site.GetPage "/" }}
+                <a class="pb3 pb0-ns f3 code dim header-link link" href="{{ .RelPermalink }}">Ben's Place</a>
+            {{ end }}
+            <div class="sep-flare" style="background-color: var(--sol-0)"></div>
+        </div>
+        <div class="header-box">
+            <div class="sep-flare" style="background-color: var(--mercury-3)"></div>
+        </div>
+        <div class="header-box">
+            <div class="sep-flare" style="background-color: var(--venus-1)"></div>
+        </div>
+        <div class="header-box">
+            {{ with site.GetPage "projects" }}
+                <a href="{{ .RelPermalink }}" class="dim link f3 code header-link" style="color: var(--mercury-0)">Projects</a>
+            {{ end }}
+            <div class="sep-flare" style="background-color: var(--earth-3)"></div>
+        </div>
+        <div class="header-box">
+            {{ with site.GetPage "blog" }}
+                <a href="{{ .RelPermalink }}" class="dim link f3 code header-link" style="color: var(--mercury-0)">Blog</a>
+            {{ end }}
+            <div class="sep-flare" style="background-color: var(--mars-2)"></div>
+        </div>
     </div>
 </div>
